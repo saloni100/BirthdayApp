@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_defult">10dp</dimen>
+    <dimen name="padding_small">5dp</dimen>
+    <dimen name="width_name">200dp</dimen>
+    <dimen name="margin_xxsmall">2dp</dimen>
+    <dimen name="margin_default">10dp</dimen>
+    <dimen name="width_default_add_birthday_screen">120dp</dimen>
+
+</resources>

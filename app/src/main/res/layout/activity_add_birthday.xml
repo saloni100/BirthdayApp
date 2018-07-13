@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddBirthdayActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_default"
+        android:layout_marginRight="@dimen/margin_default"
+        android:layout_marginTop="@dimen/margin_default"
+        >
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="@dimen/width_default_add_birthday_screen"
+            android:layout_height="wrap_content"
+            android:text="Name "
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/margin_default"
+            android:padding="@dimen/padding_defult"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txt"
+            android:text=""
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:singleLine="true"
+            android:background="@color/grey"
+            android:padding="@dimen/padding_defult"/>
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="@dimen/width_default_add_birthday_screen"
+            android:layout_height="wrap_content"
+            android:text="Phone "
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_below="@id/txt"
+            android:layout_marginRight="@dimen/margin_default"
+            android:padding="@dimen/padding_defult"/>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_below="@id/name"
+            android:layout_toRightOf="@+id/txt1"
+            android:background="@color/grey"
+            android:drawableRight="@android:drawable/sym_contact_card"
+            android:padding="@dimen/padding_defult"/>
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="@dimen/width_default_add_birthday_screen"
+            android:layout_height="wrap_content"
+            android:text="Birthday "
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_below="@id/txt1"
+            android:layout_marginRight="@dimen/margin_default"
+            android:padding="@dimen/padding_defult"/>
+
+        <TextView
+            android:id="@+id/birthdayDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:singleLine="true"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_below="@id/phone"
+            android:layout_toRightOf="@+id/txt2"
+            android:background="@color/grey"
+            android:drawableRight="@android:drawable/ic_menu_my_calendar"
+            android:paddingLeft="@dimen/padding_defult"
+            android:paddingRight="@dimen/padding_small"
+            android:paddingTop="@dimen/padding_small"
+            android:paddingBottom="@dimen/padding_small"/>
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="@dimen/width_default_add_birthday_screen"
+            android:layout_height="wrap_content"
+            android:text="Birthday Message"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_below="@+id/txt2"
+            android:layout_marginRight="@dimen/margin_default"
+            android:padding="@dimen/padding_defult"/>
+
+        <EditText
+            android:id="@+id/birthdayMessage"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:hint="Type a message"
+            android:maxLength="200"
+            android:lines="3"
+            android:gravity="left"
+            android:textSize="16sp"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_below="@+id/birthdayDate"
+            android:layout_toRightOf="@+id/txt3"
+            android:background="@color/grey"
+            android:padding="@dimen/padding_defult"/>
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="@dimen/width_default_add_birthday_screen"
+            android:layout_height="wrap_content"
+            android:text="Message time"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_below="@+id/birthdayMessage"
+            android:layout_marginRight="@dimen/margin_default"
+            android:padding="@dimen/padding_defult"/>
+
+        <TextView
+            android:id="@+id/messageTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12:00 AM"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            android:layout_marginTop="@dimen/margin_default"
+            android:layout_below="@+id/birthdayMessage"
+            android:layout_toRightOf="@+id/txt3"
+            android:background="@color/grey"
+            android:padding="@dimen/padding_defult"/>
+
+        <TextView
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/message_time"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txt4"
+            android:layout_marginRight="@dimen/margin_xxsmall"
+            android:paddingLeft="@dimen/padding_defult"
+            android:paddingTop="@dimen/padding_defult"/>
+
+        <TextView
+            android:id="@+id/messageTimeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00 AM"
+            android:textSize="14sp"
+            android:textStyle="italic|bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txt4"
+            android:layout_toRightOf="@+id/txt5"
+            android:layout_marginRight="@dimen/margin_default"
+            android:paddingTop="@dimen/padding_defult"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/add_birthday"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

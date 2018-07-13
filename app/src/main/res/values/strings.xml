@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Birthday</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_update_birthday">Update Birthday</string>
+    <string name="title_add_birthday">Add Birthday</string>
+    <string name="message_time">Your birthday message will be send at </string>
+    <string name="add_birthday">SET BIRTHDAY REMINDER</string>
+    <string name="update_birthday">UPDATE BIRTHDAY</string>
+    <string name="title_birthday">Birthdays</string>
+    <string name="permission_required">Important Permission Required</string>
+    <string name="message_alert">App. will not be able to access contacts</string>
+    <string name="message_sms_alert">App. will not be able to send birthday message</string>
+</resources>
